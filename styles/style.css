@@ -1,0 +1,83 @@
+@media (min-width: 1920px) {
+  .test {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media (min-width: 1240px) and (max-width: 1920px) {
+  .test {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media (min-width: 599px) and (max-width: 1240px) {
+  .test {
+    margin: 0 auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 599px) {
+  .test {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.test__button {
+  border: 1px solid black;
+  background: white;
+  line-height: 40px;
+  font-size: 12px;
+  font-family: arial;
+  font-weight: 700;
+  display: inline-block;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 30px;
+  min-width: 230px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.test__button:hover {
+  border: 2px solid black;
+}
+
+.test__title {
+  font-family: arial;
+  font-size: 120px;
+  line-height: 125px;
+  font-weight: 700;
+  color: red;
+}
+
+.test__text {
+  font-family: arial;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black;
+}
+
+.test__link {
+  font-family: arial;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: pink;
+  text-decoration: none;
+}
+
+.test__link:hover {
+  color: palevioletred;
+}
+/*# sourceMappingURL=style.css.map */
