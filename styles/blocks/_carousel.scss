@@ -1,0 +1,51 @@
+.carousel {
+    @include container();
+
+    &__slides {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+        overflow: hidden;
+        animation: slider 9s infinite linear;
+
+        @keyframes slider{
+            0%{}
+            35%{}
+            75%{}
+        }
+    }
+
+    &__item {
+        max-width: 150px;
+        min-width: 100px;
+        width: 30%;
+        padding: 100px;
+        background: green;
+        text-align: center;
+        margin-right: 20px;
+
+        &--selected {
+            background: red;
+        }
+    }
+
+    &__nav {
+        // display: flex;
+        // margin: 0 auto;
+        text-align: center;
+    }
+
+    &__button {
+        background: blue;
+        border-radius: 50px;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        cursor: pointer;
+
+        &--selected {
+            background: red;
+        }
+    }
+}
