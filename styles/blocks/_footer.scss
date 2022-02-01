@@ -1,0 +1,62 @@
+.footer {
+    background: $primary;
+
+    &__container {
+
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        padding-top: 50px;
+    }
+
+    &__logo {
+        height: 150px;
+        width: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__columns {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__column {
+        padding-left: 0;
+
+    }
+
+    &__item {
+        list-style-type: none;
+
+        a {
+            @include nav();
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+    }
+
+    &__terms {
+        @include p();
+        color: $white;
+
+        a {
+            @include a();
+        }
+    }
+
+    .socials {
+        align-items: flex-end;
+    }
+
+}

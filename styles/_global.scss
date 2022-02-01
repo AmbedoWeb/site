@@ -1,0 +1,20 @@
+// *,
+// ::before,
+// ::after {
+//   box-sizing: border-box;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  // font-family: $muli;
+
+    h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, figure, img {
+        margin: 0;
+    }
+}

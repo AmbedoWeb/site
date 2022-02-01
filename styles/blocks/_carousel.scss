@@ -1,4 +1,7 @@
 .carousel {
+    $root: &;
+    $item: #{$root}__item;
+
     @include container();
 
     &__slides {
@@ -7,13 +10,7 @@
         width: 100%;
         margin-bottom: 50px;
         overflow: hidden;
-        animation: slider 9s infinite linear;
-
-        @keyframes slider{
-            0%{}
-            35%{}
-            75%{}
-        }
+        @include p();
     }
 
     &__item {
@@ -21,31 +18,40 @@
         min-width: 100px;
         width: 30%;
         padding: 100px;
-        background: green;
+        background: $salmon;
         text-align: center;
         margin-right: 20px;
+        transition: .2s;
 
         &--selected {
-            background: red;
+            background: $coral;
         }
     }
 
     &__nav {
-        // display: flex;
-        // margin: 0 auto;
         text-align: center;
     }
 
     &__button {
-        background: blue;
+        background: $salmon;
         border-radius: 50px;
         height: 30px;
         width: 30px;
         display: inline-block;
         cursor: pointer;
+        transition: .2s;
+
+        &:not(:last-of-type) {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background: $coral;
+        }
 
         &--selected {
-            background: red;
+            background: $coral;
         }
+
     }
 }

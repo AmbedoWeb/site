@@ -1,22 +1,24 @@
 @mixin button() {
 
-    border: 1px solid black;
-    background: white;
+    border: 1px solid $buttonbg;
+    background: $buttonbg;
     line-height: 40px;
     font-size: 12px;
     font-family: arial;
     font-weight: $f-bold;
     display: inline-block;
-    color: black;
+    color: $buttoncolor;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 30px;
     min-width: 230px;
     text-align: center;
     cursor: pointer;
+    transition: .2s;
 
     &:hover {
-        border: 2px solid black;
+        border: 1px solid $buttonbghover;
+        background: $buttonbghover;
     }
     
 }
